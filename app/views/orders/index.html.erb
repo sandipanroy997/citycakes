@@ -1,0 +1,16 @@
+<div id="order_history" class="clearfix">
+<h3>This is your order history</h3>
+<ul>
+<% @placed_items.each do |a| %>
+
+
+<li><%=  image_tag a.avatar.url(:thumb) %>
+<h4><%= a.name %></h4>
+<span>Rs.<%= a.price %></span>
+</li>
+
+
+<% end %>
+</ul>
+
+</div>

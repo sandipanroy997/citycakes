@@ -1,0 +1,20 @@
+<div class="view-cake-details">
+ <div class="cake-details">
+    <%= image_tag @product.avatar.url(:large) %>
+    <h3><%= @product.name %></h3>
+    <p><%= @product.description %></p>
+    <span> Price: Rs.<%= @product.price %></span>
+    <% if current_user && current_user.has_product?(@product) %>
+    <%= link_to 'In cart', "javascript:;", :class => "cart-btn", :id => "product_#{@product.id}" %>
+    <% else %>
+    <%= link_to 'add to cart', add_item_orders_path(:id => @product), "data-remote" => true, "data-method" => "post",:class => "cart-btn", :id => "product_#{@product.id}" %>
+    <% end %>
+   <% if current_user.admin? %>
+  <%= link_to 'edit product', edit_product_path %>
+  
+  <%= link_to "delete", p, method: :delete, confirm: "You sure?" %>
+   <% end %>
+ </div>
+
+</div>
+

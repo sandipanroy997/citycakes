@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ a {
+    color:#333333;
+    text-decoration: none;
+}
+ a img {
+    border: medium none;
+}
+ ul {
+    list-style: none outside none;
+}
+ .all {
+    float: left;
+}
+.alr {
+    float: right;
+}
+.clr {
+    clear:both;
+}
+ .clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input[type="text"], input[type="password"] {
+    border: 1px solid #CCCCCC;
+    height: 25px;
+    width: 250px;
+}
+input[type="submit"],.cart-btn {
+    background-color:#A60000;
+    color: #FFFFFF;
+    float: right;
+    padding: 3px 5px;
+    border:none;
+}
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 12px;
+}
+
+#wrapper {
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 0 1px;
+    margin: 0 auto;
+    width: 1002px;
+    min-height:850px;
+ }
+#header {
+    border-bottom: 1px solid #CCCCCC;
+    padding: 10px;
+}
+
+#header > ul > li {
+    float: left;
+    margin-left: 20px;
+    padding-bottom:10px;
+    position:relative;
+}
+ #header li:first-child, #navigation li:first-child {
+    margin: 0;
+}
+
+#search {
+    clear: right;
+    float: right;
+    margin-top: 38px;
+}
+#navigation
+{
+    background-color:#efefef;
+    padding:10px 150px;
+    font-size:14px;
+    font-weight:bold;
+}
+#navigation li
+{
+    float:left;
+    margin-left:40px;
+}
+.featured-cakes {
+ padding:20px;
+ }
+.featured-cakes-header {
+    margin-bottom:10px;
+}
+.featured-cakes li {
+    background-color: #CCCCCC;
+    float: left;
+    margin:0 122px 20px 0;
+    padding: 10px;
+}
+.featured-cakes li div {
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.featured-cakes li div h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#header ul ul {
+    background-color:#FFFFFF;
+    border: 1px solid #CCCCCC;
+    display: none;
+    padding: 5px 10px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 20px;
+}
+#header li li {
+    margin-top: 8px;
+}
+#header > ul > li:hover ul {
+    display: block;
+}
+#header li:hover > a {
+    color: #A60000;
+}
+.no-right-space
+{
+    margin-right:0 !important
+}
+.registration-form {
+    border: 1px solid #CCCCCC;
+    margin: 200px auto 0;
+    padding: 25px;
+    text-align: center;
+    width: 356px;
+}
+
+.registration-form h1 { margin-bottom:15px; }
+
+.registration-form p {
+    clear: right;
+    float: right;
+    font-size: 11px;
+    margin-top: 10px;
+}
+.registration-form a {
+    color:#a60000;
+}
+
+.product-form {
+    padding: 20px;
+    width: 450px;
+}
+#shopping_cart_wrapper {
+    padding:20px;
+}
+#shopping_cart {
+    border: 1px solid #CCCCCC;
+    margin-bottom:20px;
+}
+#shopping_cart h3,#shopping_cart tfoot {
+    background-color: #EFEFEF;
+    padding: 10px;
+}
+#shopping_cart h3 {
+    border-bottom: 1px solid #CCCCCC;
+}
+#shopping_cart table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align:left;
+}
+
+#shopping_cart table th {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#shopping_cart table th,#shopping_cart table td {
+    padding: 10px;
+}
+#shopping_cart table td {
+    vertical-align:top;
+}
+#shopping_cart table img {
+    float: left;
+    margin-right: 10px;
+}
+.text-right {
+    text-align:right;
+}
+.text-center {
+    text-align:center;
+}
+#shopping_cart tfoot {
+    border-top:1px solid #cccccc;
+    font-weight:bold;
+}
+.cake-details {
+ padding:20px;
+ }
+
+.cake-details img {
+    float: left;
+    margin-right: 25px;
+}
+
+.cake-details h3 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.cake-details p {
+    color: #999999;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+.cake-details span {
+    color: #A60000;
+    font-size: 15px;
+    font-weight: bold;
+}
+.cake-details .cart-btn {
+    float:none;
+}
+#order_history {
+ padding:20px;
+  }
+#order_history h3 {
+    font-size: 18px;
+    margin: 0 0 20px 13px;
+}
+#order_history li {
+    border: 1px solid #CCCCCC;
+    float: left;
+    margin: 0 13px 20px;
+    padding: 10px;
+    text-align: center;
+    width: 112px;
+}
+#order_history h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#order_history span {
+    color: #a60000;
+}
+.confirm-order {
+    width: 360px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+

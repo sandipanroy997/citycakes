@@ -1,0 +1,35 @@
+
+
+<%= provide(:title, 'Sign up') %>
+
+<div class="registration-form clearfix">
+<h1>Sign up</h1>  
+   
+  
+    <%= form_for(@user) do |f| %>
+    
+    <%=render 'shared/error_messages', object: f.object %>
+          
+      <%= f.label :name %>
+      <%= f.text_field :name %><br/><br/> 
+
+      <%= f.label :email %>
+      <%= f.text_field :email %><br/><br/> 
+
+      <%= f.label :password %>
+      <%= f.password_field :password %><br/><br/>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation %><br/><br/>
+
+      <%= f.submit "Create my account", class: "" %>
+      <p>already have an account ? <%= link_to "Sign in", signin_path %></p>
+    <% end %>
+  
+  
+</div>
+
+
+
+
+<%= link_to 'Back', users_path %>

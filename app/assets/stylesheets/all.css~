@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ a {
+    color:#333333;
+    text-decoration: none;
+}
+ a img {
+    border: medium none;
+}
+ ul {
+    list-style: none outside none;
+}
+ .all {
+    float: left;
+}
+.alr {
+    float: right;
+}
+.clr {
+    clear:both;
+}
+ .clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input[type="text"], input[type="password"] {
+    border: 1px solid #CCCCCC;
+    height: 25px;
+    width: 250px;
+}
+input[type="submit"],.cart-btn {
+    background-color:#A60000;
+    color: #FFFFFF;
+    float: right;
+    padding: 3px 5px;
+    border:none;
+}
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 12px;
+}
+
+#wrapper {
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 0 1px;
+    margin: 0 auto;
+    width: 1002px;
+    min-height:850px;
+ }
+#header {
+    border-bottom: 1px solid #CCCCCC;
+    padding: 10px;
+}
+
+#header > ul > li {
+    float: left;
+    margin-left: 20px;
+    padding-bottom:10px;
+    position:relative;
+}
+ #header li:first-child, #navigation li:first-child {
+    margin: 0;
+}
+
+#search {
+    clear: right;
+    float: right;
+    margin-top: 38px;
+}
+#navigation
+{
+    background-color:#efefef;
+    padding:10px 150px;
+    font-size:14px;
+    font-weight:bold;
+}
+#navigation li
+{
+    float:left;
+    margin-left:40px;
+}
+.featured-cakes {
+ padding:20px;
+ }
+.featured-cakes-header {
+    margin-bottom:10px;
+}
+.featured-cakes li {
+    background-color: #CCCCCC;
+    float: left;
+    margin:0 122px 20px 0;
+    padding: 10px;
+}
+.featured-cakes li div {
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.featured-cakes li div h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#header ul ul {
+    background-color:#FFFFFF;
+    border: 1px solid #CCCCCC;
+    display: none;
+    padding: 5px 10px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 20px;
+}
+#header li li {
+    margin-top: 8px;
+}
+#header > ul > li:hover ul {
+    display: block;
+}
+#header li:hover > a {
+    color: #A60000;
+}
+.no-right-space
+{
+    margin-right:0 !important
+}
+.registration-form {
+    border: 1px solid #CCCCCC;
+    margin: 200px auto 0;
+    padding: 25px;
+    text-align: center;
+    width: 356px;
+}
+
+.registration-form h1 { margin-bottom:15px; }
+
+.registration-form p {
+    clear: right;
+    float: right;
+    font-size: 11px;
+    margin-top: 10px;
+}
+.registration-form a {
+    color:#a60000;
+}
+
+.product-form {
+    padding: 20px;
+    width: 450px;
+}

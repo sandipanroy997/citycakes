@@ -1,0 +1,9 @@
+class ProductType < ActiveRecord::Base
+
+ REGULAR_CAKES = 1
+ WEDDING_CAKES = 2
+ SPECIAL_CAKES = 3
+ CHILDREN_CAKES = 4
+ NUMBERERD_CAKES = 5
+
+end

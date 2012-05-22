@@ -1,0 +1,23 @@
+<div class="cake-view">
+
+  <%  @products.each do |product_type, product_arr| %>
+  <div class="featured-cakes clearfix">
+  <div class="featured-cakes-header clearfix">
+    <h2 class="all"><%= ProductType.find(product_type).name %></h2>
+    <%= link_to 'view all',  products_path(:id => product_type), :class => "alr" %>
+   </div>
+    <ul>
+      <% product_arr.each do |product| %>
+      <li>
+        <%= link_to image_tag(product.avatar.url(:medium),:size => "219x208"), product_path(product) %>
+        <div class="clearfix">
+          <h3><%= product.name %> </h3>
+          <p class="all"> Rs.<span> <%= product.price %> </span> </p>
+          <%= link_to 'add to cart', add_item_order_path(product), "data-remote" => true, "data-method" => "post",:class => "cart-btn" %>
+        </div>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
+</div>

@@ -1,0 +1,14 @@
+<li class="<%= c %>">
+  <%= link_to image_tag(p.avatar.url(:medium),:size => "219x208"), product_path(p) %>
+  <div class="clearfix">
+    <h3><%= p.name %> </h3>
+    <p class="all"> Rs.<span> <%= p.price %> </span> </p>
+ 
+    <% if current_user && current_user.has_product?(p) %>
+    <%= link_to 'In cart', "javascript:;", :class => "cart-btn", :id => "product_#{p.id}" %>
+    <% else %>
+    <%= link_to 'add to cart', add_item_orders_path(:id => p), "data-remote" => true, "data-method" => "post",:class => "cart-btn", :id => "product_#{p.id}" %>
+    <% end %>
+  
+  </div>
+</li>

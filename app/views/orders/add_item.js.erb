@@ -1,0 +1,2 @@
+$("a.#product_<%= @product.id %>").replaceWith("<a class='cart-btn' href='javascript:;'>In Cart</a>");
+$("#in-cart-item-count").text("My Cart (<%= current_user.open_order && current_user.open_order.order_items.count %>)");

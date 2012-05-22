@@ -1,0 +1,17 @@
+<div class="cake-view">
+
+  <%  @products.each do |product_type, product_arr| %>
+  <div class="featured-cakes clearfix">
+    <div class="featured-cakes-header clearfix">
+      <h2 class="all"><%= ProductType.find(product_type).name %></h2>
+      <%= link_to 'view all',  products_path(:id => product_type), :class => "alr" %>
+    </div>
+    <ul>
+      <% product_arr.each_with_index do |product, index| %>
+      <% clazz = ((index+1) % 3) == 0 ? "no-right-space" : "" %>
+      <%= render :partial => "products/product", :locals => {:p => product, :c => clazz} %>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
+</div>

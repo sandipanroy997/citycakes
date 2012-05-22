@@ -1,0 +1,9 @@
+<div id="navigation" class="clearfix"> 
+  <ul> 
+        <li><%=link_to "Regular Cakes", '#' %></li> 
+        <li><%=link_to "Wedding Cakes", '#' %></li> 
+        <li><%=link_to "Special Cakes", '#' %></li> 
+        <li><%=link_to "Children Cakes", '#' %></li> 
+        <li><%=link_to "Numbered Cakes", '#' %></li> 
+  </ul> 
+</div> 

@@ -1,0 +1,31 @@
+<%= provide(:title, 'Add new product') %>
+
+<h1> Add Products</h1>
+<div class="product-form">
+
+         <%= form_for @product, :html => {:multipart => true } do |f| %>
+ 
+            <%= f.label :name %>
+            <%= f.text_field :name %><br /><br />
+    
+            <%= f.label :product_type %>
+            <%= f.select :product_type, ProductType.all.map{|p| [p.name,p.id]} %><br /><br />
+
+            <%= f.label  :description %>
+            <%= f.text_area :description %><br /><br />
+            
+            <%=  f.label  :avatar %>
+            <%= f.file_field :avatar %><br /><br />
+            
+            <%= f.label  :price %>
+            <%= f.number_field :price %><br /><br />
+
+            <%= f.label :weight %>
+            <%= f.text_field :weight %><br /><br />
+            
+
+            <%= f.submit "Add Product", class: "btn btn-large btn-primary" %>
+     
+     <% end %>
+
+</div>

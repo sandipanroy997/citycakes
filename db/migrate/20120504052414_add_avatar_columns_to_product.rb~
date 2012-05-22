@@ -1,0 +1,4 @@
+class AddAvatarColumnsToProduct < ActiveRecord::Migration
+  def change
+  end
+end

@@ -1,0 +1,27 @@
+class ShoppingCartItemsController < ApplicationController
+  before_filter :get_open_order
+
+  def index
+    @order_item_products = @open_order.order_items.collect(&:product)
+    @total = @open_order.order_items.sum("price")
+    puts @total
+  end
+
+  def confirm
+  @shipping_address= ShippingAddress.new
+
+
+  end
+
+  def destroy
+    @open_order.order_items.find(params[:id]).destroy
+    flash[:success] = "Product Removed From Cart"
+    redirect_to shopping_cart_items_path
+  end
+
+  protected
+
+  def get_open_order
+    @open_order = current_user.get_or_create_open_order
+  end
+end
